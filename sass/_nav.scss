@@ -1,0 +1,30 @@
+// MAIN NAV //
+
+
+h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+
+ 
+
+.side-bar {
+    font-size: 2rem;
+
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+

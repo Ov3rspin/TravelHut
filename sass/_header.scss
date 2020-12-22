@@ -1,0 +1,168 @@
+//// STYLING FOR HEADER
+
+.header {
+    background-image: url(../img/emile-arab-8gsa8FGEfsc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+//// STYLING FOR NAV
+
+.nav { background-color: var(--color-primary-light);}
+
+.main-nav {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 2rem 0;
+    border-bottom: var(--shadow-dark);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    &__brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-primary-dark);
+        margin-right: auto;
+    }
+
+    &__text { font-size: 2.5rem; }
+
+    &__logo {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-left: .5rem;
+        fill: var(--color-primary-dark);
+    }
+
+    &__nav {
+        margin-left: auto;
+        text-transform: uppercase;
+        margin-right: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    &__list {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 1rem;
+        transition: all;     
+    }
+
+    &__item:hover { border-bottom: var(--line); }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+
+//// STYLING FOR BUTTON
+
+.btn {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 1.2rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    text-transform: uppercase;
+    transition: all .3s;
+    font-weight: 700;
+
+    &:hover {
+        background-color: var(--color-secondary-dark);
+        transform: scale(1.2);
+    }
+}
+
+//// STYLING FOR MAIN TITLE
+
+.hero {
+    display: flex;
+    color: var(--color-white);
+    height: 30rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10rem;
+
+    &__box {
+        display: flex;
+        width: 100%;
+    }
+
+    &__text-box { letter-spacing: .1rem; }
+    
+    &__1 {
+        font-size: 4.5rem;
+        top: 15rem;
+    }
+
+    &__2 { font-size: 3rem; }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        top: 7rem;
+        left: -10rem;
+        margin-left: auto;
+        position: relative;
+    }
+
+    &__img {
+        width: 4rem;
+        height: 4rem;
+        fill: var(--color-white);
+
+        &:not(:last-child) { margin-bottom: 2rem; }
+
+        &.facebook:hover { fill: #3b5999;}
+
+        &.twitter:hover { fill: #55acee; }
+
+        &.instagram:hover { fill: #e4405f; }
+    }
+
+    &__button {
+        width: 100%;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: c;
+
+        &-img {
+            width: 2rem;
+            height: 2rem;
+            fill: var(--color-white);
+        }
+    }
+
+    &__button-btn {
+        width: 13rem;
+        height: 5rem;
+        border-radius: 10px;
+        top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

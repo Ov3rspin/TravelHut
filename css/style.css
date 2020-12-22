@@ -1,0 +1,179 @@
+:root {
+  --color-primary: #2a9d8f;
+  --color-primary-light: #2a9d9056;
+  --color-primary-dark: #264653;
+  --color-secondary-light: #e9c46a;
+  --color-secondary-medium: #f4a261;
+  --color-secondary-dark: #e76f51;
+  --color-white: #fff;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-primary-dark); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+.container {
+  background-color: var(--color-grey-dark-1);
+  max-width: 120rem;
+  margin: 3rem auto;
+  min-height: 50rem; }
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase; }
+
+.side-bar {
+  font-size: 2rem; }
+  .side-bar__list {
+    list-style: none; }
+  .side-bar__link:link, .side-bar__link:visited {
+    text-decoration: none;
+    color: #fff; }
+
+.header {
+  background-image: url(../img/emile-arab-8gsa8FGEfsc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.nav {
+  background-color: var(--color-primary-light); }
+
+.main-nav {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  padding: 2rem 0;
+  border-bottom: var(--shadow-dark);
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%; }
+  .main-nav__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary-dark);
+    margin-right: auto; }
+  .main-nav__text {
+    font-size: 2.5rem; }
+  .main-nav__logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: .5rem;
+    fill: var(--color-primary-dark); }
+  .main-nav__nav {
+    margin-left: auto;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem; }
+  .main-nav__list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .main-nav__item {
+    margin-right: 1rem;
+    transition: all; }
+  .main-nav__item:hover {
+    border-bottom: var(--line); }
+  .main-nav__link:link, .main-nav__link:visited {
+    text-decoration: none;
+    color: #FFF; }
+
+.btn {
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding-left: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 1.2rem;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  text-transform: uppercase;
+  transition: all .3s;
+  font-weight: 700; }
+  .btn:hover {
+    background-color: var(--color-secondary-dark);
+    transform: scale(1.2); }
+
+.hero {
+  display: flex;
+  color: var(--color-white);
+  height: 30rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10rem; }
+  .hero__box {
+    display: flex;
+    width: 100%; }
+  .hero__text-box {
+    letter-spacing: .1rem; }
+  .hero__1 {
+    font-size: 4.5rem;
+    top: 15rem; }
+  .hero__2 {
+    font-size: 3rem; }
+  .hero__social {
+    display: flex;
+    flex-direction: column;
+    top: 7rem;
+    left: -10rem;
+    margin-left: auto;
+    position: relative; }
+  .hero__img {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--color-white); }
+    .hero__img:not(:last-child) {
+      margin-bottom: 2rem; }
+    .hero__img.facebook:hover {
+      fill: #3b5999; }
+    .hero__img.twitter:hover {
+      fill: #55acee; }
+    .hero__img.instagram:hover {
+      fill: #e4405f; }
+  .hero__button {
+    width: 100%;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: c; }
+    .hero__button-img {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--color-white); }
+  .hero__button-btn {
+    width: 13rem;
+    height: 5rem;
+    border-radius: 10px;
+    top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
